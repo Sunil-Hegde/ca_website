@@ -1,3 +1,18 @@
+body::-webkit-scrollbar {
+  width: .4em;
+}
+ 
+body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, rgba(0,0,0,1));
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(85, 84, 84);
+  outline: 1px solid slategrey;
+  border-radius: 15px;
+  margin: 2px;
+}
+
 .slide {
   position: absolute;
   inset: 0;
