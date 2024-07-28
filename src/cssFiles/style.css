@@ -1,3 +1,8 @@
+#container1{
+  height: 90vh; 
+  background: radial-gradient(circle, rgba(78, 101, 255, 1) 0%, rgba(30, 174, 152, 1) 100%);
+}
+
 nav{
   display: flex;
   justify-content: space-between;
@@ -41,8 +46,10 @@ nav{
   transform: scale(1.08);
   cursor: pointer;
 }
-.navItems a:link{
-text-decoration: none;
+.navItems a:link,
+.logo a:link{
+  text-decoration: none;
+  color: black; 
 }
 .middleContainer {
   padding: 50px;
@@ -65,4 +72,40 @@ text-decoration: none;
   padding: 0;
   list-style: none;
 }
+
+#container2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60vw;
+  margin: auto;
+  padding: 50px;
+}
+
+#container2 img{
+  height: 100px;
+  width: auto;
+  margin: 50px;
+}
+
+#container2 .content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#container3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  justify-content: space-around;
+}
+
+#container3 .cardBox{
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+}
+
 
