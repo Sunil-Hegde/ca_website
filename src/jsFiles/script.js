@@ -30,9 +30,10 @@ document.addEventListener('DOMContentLoaded', function () {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('in-view');
-
-                if (entry.target.id === 'container1') {
-                    document.querySelector('.logo .logoname').classList.add('visible');
+                if (window.innerWidth > 640){
+                    if (entry.target.id === 'container1') {
+                        document.querySelector('.logo .logoname').classList.add('visible');
+                    }
                 }
             } else {
                 entry.target.classList.remove('in-view');
@@ -84,3 +85,26 @@ window.onload = function() {
     updateMargin(); // Initial call
     window.addEventListener('resize', updateMargin); // Update on resize
 };
+
+const hamburgerSwitch = document.querySelector('.hamburger input');
+const navFont = document.querySelectorAll('.overlay-content a');
+
+hamburgerSwitch.addEventListener('change', function() {
+    if (this.checked) {
+        openNav();
+    } else {
+        closeNav();
+    }
+});
+navFont.forEach(link => {
+    link.addEventListener('click', function () {
+        closeNav();
+        hamburgerSwitch.click();
+    });
+});
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }

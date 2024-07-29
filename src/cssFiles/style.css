@@ -1,18 +1,19 @@
 @font-face {
-  font-family: 'coolveticaregular';
-  src: url('../assets/fonts/coolvetica_rg-webfont.woff2') format('woff2'),
-       url('../assets/fonts/coolvetica_rg-webfont.woff') format('woff');
+  font-family: 'tt_chocolates_trlregular';
+  src: url('../assets/fonts/tt_chocolates_trial_regular-webfont.woff2') format('woff2'),
+       url('../assets/fonts/tt_chocolates_trial_regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+
 }
 html{
   scroll-behavior: smooth;
 }
 
 body{
-  font-family: 'coolveticaregular';
+  font-family: 'tt_chocolates_trlregular';
   font-weight: 100;
-  font-size: medium;
+  font-size: large;
   letter-spacing: 1px;
 }
 
@@ -66,7 +67,7 @@ nav {
 }
 
 .logo img {
-  height: 50px;
+  height: 5vh;
   background-color: white;
   padding: 10px;
   border-radius: 1rem;
@@ -76,11 +77,6 @@ nav {
   opacity: 1; 
   padding-left: 20px;
   transition: opacity 0.7s ease-in; 
-}
-
-.logo .logoname{
-  padding-left: 20px;
-  display: none;
 }
 
 .logo .logoname.visible {
@@ -101,7 +97,7 @@ nav {
 .navItems ul {
   display: flex;
   justify-content: space-between;
-  width: 500px;
+  width: 50vw;
   padding: 20px;
   list-style: none;
 }
@@ -129,7 +125,6 @@ nav {
 
 .middleContainer {
   padding: 50px;
-  padding-top: 20vh;
   box-sizing: border-box; 
   display: flex;
   justify-content: space-evenly;
@@ -219,13 +214,18 @@ nav {
     padding-left: 0;
   }
 
-  .logo .logoname2{
+  .logo .logoname{
     font-size: small;
     width: 50vw;
   }
   .logo img {
     margin: 10px;
   }
+
+  .logo .logoname .ca{
+    display: none;
+  }
+
   nav {
     align-items: center;
     justify-content: space-evenly;

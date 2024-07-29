@@ -70,7 +70,7 @@ body::-webkit-scrollbar-thumb {
 
 .card {
   width: 400px;
-  height: 570px;
+  height: auto;
   background: #f5f5f5;
   padding: 2rem 1.5rem;
   transition: box-shadow .3s ease, transform .2s ease;
@@ -78,6 +78,7 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   border-radius: 1rem;
   border: 1px solid rgba(78, 101, 255, 1);
+  margin: 10px;
  }
 
  .card-info {
@@ -108,6 +109,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   opacity: 0;
   transition: transform .7s ease, opacity .7s ease;
+  padding-left: 0;
  }
  
  .card-social__item {
@@ -141,10 +143,6 @@ body::-webkit-scrollbar-thumb {
   box-shadow: 0 8px 50px #23232333;
  }
  
- .card:hover .card-info {
-  transform: translateY(-5%);
- }
- 
  .card:hover .card-social {
   margin: auto;
   opacity: 1;
@@ -163,7 +161,7 @@ body::-webkit-scrollbar-thumb {
 .card_article{
   box-sizing: border-box;
   width: 275px;
-  height: 300px;
+  height: auto;
   background: rgba(217, 217, 217, 0.58);
   border: 1px solid rgba(78, 101, 255, 1);
   box-shadow: 2px 7px 14px rgba(0, 0, 0, 0.22);
@@ -382,15 +380,14 @@ body::-webkit-scrollbar-thumb {
   padding: 8px;
   text-decoration: none;
   font-size: 50px;
-  font-family: franchiseregular;
-  text-shadow: 0 0 10px #925ff0; 
-  color: white;
+  text-shadow: 0 0 10px rgba(78, 101, 255, 1); 
+  color: black;
   display: block; 
   transition: 0.3s; 
 }
 
 .overlay a:hover, .overlay a:focus {
-  color: red;
+  color: rgba(78, 101, 255, 1);
 }
 
 @media only screen and (width < 640px) {
@@ -402,6 +399,12 @@ body::-webkit-scrollbar-thumb {
   .card{
     box-shadow: 0 8px 50px #23232333;
     margin: 10px 5px;
+    width: 90vw;
+    
+   }
+
+   .card-title{
+    font-size: 1.1em;
    }
    
    .card .card-info {
@@ -426,6 +429,7 @@ body::-webkit-scrollbar-thumb {
    .card_article{
     width: 25vw;
     height: calc(1.5*25vw);
+    width: 90vw;
    }
 
    .card_article p{
@@ -436,14 +440,6 @@ body::-webkit-scrollbar-thumb {
   }
   .form-container{
     margin: 0;
-  }
-
-  .card{
-    width: 90vw;
-    height: calc(2*90vw);
-  }
-  .card_article{
-    width: 90vw;
   }
 
   #container2 .content{
