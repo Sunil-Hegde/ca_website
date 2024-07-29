@@ -11,12 +11,15 @@
     <script src="./src/jsFiles/script.js" defer></script>
 </head>
 <body style="margin: 0;">
-    <nav style="display: flex;">
+    <nav id="navbar" style="display: flex;">
         <div class="logo">
             <img src="./src/assets/logo.png" alt="nil">
             <div class="logoname">
-                <h3>Hegde Hegde & Associates LLP.</h3>
-                <h3>Chartered Accountants</h3>
+                <h3 class="hnh">Hegde Hegde & Associates LLP.</h3>
+                <h3 class="ca">Chartered Accountants</h3>
+            </div>
+            <div class="logoname2">
+                <h3 class="hnh">Hegde Hegde & Associates LLP.</h3>
             </div>
         </div>
         <div class="navItems">
@@ -28,11 +31,25 @@
                 <li><a href="#container5">Contact Us</a></li>
             </ul>
         </div>
+        <label class="hamburger" for="hamburger">
+            <input type="checkbox" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
     </nav>
+    <div id="myNav" class="overlay">
+        <div class="overlay-content">
+          <a href="#container2">About</a>
+          <a href="#container3">Projects</a>
+          <a href="#container4">Team Work</a>
+          <a href="#footer">Contact</a>
+        </div>
+    </div>
     <div id="container1" class="container">
         <div class="middleContainer">
             <section aria-label="Photos">
-                <div class="carouselContainer" data-carousel>
+                <div id="carouselContainer" class="carouselContainer" data-carousel>
                     <button class="carouselButton prev" data-carousel-button="prev">&#706;</button>
                     <button class="carouselButton next" data-carousel-button="next">&#707;</button>
                     <ul data-slides>
@@ -71,7 +88,7 @@
         </div>
     </div>
     <div id="container3" class="container">
-        <h1 style="z-index: 99;">Our team</h1>
+        <h1 style="z-index: 99;">Our Team</h1>
         <div class="cardBox">
             <div class="card">
                 <div class="card-info">

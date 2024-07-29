@@ -294,3 +294,159 @@ body::-webkit-scrollbar-thumb {
   color: black;
   cursor: pointer;
 }
+
+.hamburger {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger input {
+  display: none;
+}
+
+.hamburger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: black;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.hamburger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.hamburger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.hamburger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.hamburger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+}
+
+.hamburger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.hamburger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 28px;
+  left: 5px;
+}
+
+ /* The Overlay (background) */
+ .overlay { 
+  height: 100%;
+  width: 0;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  backdrop-filter: blur(30px);
+  overflow-x: hidden; 
+  transition: 0.5s;
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 35%;
+  width: 100%;
+  text-align: center; 
+  margin-top: 30px;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 50px;
+  font-family: franchiseregular;
+  text-shadow: 0 0 10px #925ff0; 
+  color: white;
+  display: block; 
+  transition: 0.3s; 
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: red;
+}
+
+@media only screen and (width < 640px) {
+  .hamburger{
+    display: block;
+    margin-left: 20px;
+  }
+
+  .card{
+    box-shadow: 0 8px 50px #23232333;
+    margin: 10px 5px;
+   }
+   
+   .card .card-info {
+    transform: translateY(-5%);
+   }
+   
+   .card .card-social {
+    margin: auto;
+    opacity: 1;
+    padding: 0;
+   }
+   
+   .card-social__item svg {
+    fill: #232323;
+    transform: scale(1.1);
+   }
+   
+   .card-avatar {
+    transform: scale(1.1);
+   }
+
+   .card_article{
+    width: 25vw;
+    height: calc(1.5*25vw);
+   }
+
+   .card_article p{
+    display: none;
+   }
+   .google-map iframe {
+    width: 90vw;
+  }
+  .form-container{
+    margin: 0;
+  }
+
+  .card{
+    width: 90vw;
+    height: calc(2*90vw);
+  }
+  .card_article{
+    width: 90vw;
+  }
+
+  #container2 .content{
+    padding: 15px;
+  }
+}

@@ -71,3 +71,16 @@ const nextButton = document.querySelector("[data-carousel-button='next']");
 setInterval(() => {
     nextButton.click();
 }, 10000);
+
+window.onload = function() {
+    var referenceDiv = document.getElementById('navbar');
+    var targetDiv = document.getElementById('carouselContainer');
+    
+    function updateMargin() {
+        var referenceHeight = referenceDiv.offsetHeight;
+        targetDiv.style.marginTop = referenceHeight+ 1 + 'px';
+    }
+
+    updateMargin(); // Initial call
+    window.addEventListener('resize', updateMargin); // Update on resize
+};
