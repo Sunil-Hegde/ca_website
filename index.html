@@ -6,28 +6,30 @@
     <title>H&H Asso. LLP.</title>
     <link rel="stylesheet" href="./src/cssFiles/style.css">
     <link rel="stylesheet" href="./src/cssFiles/elements.css">
+    <link rel="stylesheet" href="./src/cssFiles/swiper-bundle.min.css">
     <link rel="icon" type="image/x-icon" href="./src/assets/favicon.ico">
-    <script src="./src/script.js" defer></script>
+    <script src="./src/jsFiles/script.js" defer></script>
 </head>
 <body style="margin: 0;">
-    <div id="container1">
-        <nav style="display: flex;">
-            <div class="logo">
-                <img src="./src/assets/logo.png" alt="nil">
-                <div class="logoname">
-                    <h3>Hegde Hegde & Associates LLP.</h3>
-                    <h3>Chartered Accountants</h3>
-                </div>
+    <nav style="display: flex;">
+        <div class="logo">
+            <img src="./src/assets/logo.png" alt="nil">
+            <div class="logoname">
+                <h3>Hegde Hegde & Associates LLP.</h3>
+                <h3>Chartered Accountants</h3>
             </div>
-            <div class="navItems">
-                <ul>
-                    <li><a href="#container2">About Us</a></li>
-                    <li>Services</li>
-                    <li>Blog</li>
-                    <li>Contact Us</li>
-                </ul>
-            </div>
-        </nav>
+        </div>
+        <div class="navItems">
+            <ul>
+                <li><a href="#container2">About Us</a></li>
+                <li><a href="#container3">Our Team</a></li>
+                <li><a href="#container4">Services</a></li>
+                <li>Blog</li>
+                <li><a href="#container5">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="container1" class="container">
         <div class="middleContainer">
             <section aria-label="Photos">
                 <div class="carouselContainer" data-carousel>
@@ -48,12 +50,13 @@
             </section>
             <div class="nameContainer">
                 <h1>Hegde Hegde & Associates LLP.</h1>
-                <h2>J. P. Nagar, Bengaluru</h2>
+                <h2>Chartered Accountants</h2>
+                <h3>J. P. Nagar, Bengaluru</h3>
             </div>
         </div>
     </div>
-    <div id="container2">
-        <h1>About Us</h1>
+    <div id="container2" class="container">
+        <h1 style="z-index: 9999;">About Us</h1>
         <div class="story content">
             <img src="./src/assets/story.png" alt="">
             <p>Our story began in 2020 with a shared vision of empowering businesses and individuals through sound financial guidance. Since then, we've grown into a trusted name in the Indian accounting landscape, serving clients across diverse industries.</p>
@@ -67,8 +70,8 @@
             <p>Our team of experienced Chartered Accountants is passionate about what we do. We stay abreast of the latest regulations and industry trends, ensuring that our clients receive the most up-to-date and accurate advice. We believe in continuous learning and professional development, and we invest in our team's growth to better serve our clients.</p>
         </div>
     </div>
-    <div id="container3">
-        <h1>Our team</h1>
+    <div id="container3" class="container">
+        <h1 style="z-index: 99;">Our team</h1>
         <div class="cardBox">
             <div class="card">
                 <div class="card-info">
@@ -133,6 +136,104 @@
                         </svg>
                     </li>
                 </ul>
+            </div>
+        </div>
+    </div>
+    <div id="container4" class="container">
+        <h1 style="z-index: 99;">Our Services</h1>
+        <div class="cardBox">
+            <article class="card_article">
+                <div class="card_data">
+                    <h3>Entity Set-up Solutions</h3>
+                    <p>Simplify your business launch in India. We handle company/LLP registration, GST, PAN/TAN, legal docs & ongoing compliance.</p>
+                </div>
+            </article>
+            <article class="card_article">
+                <div class="card_data">
+                    <h3>Accounting Process Outsourcing (APO)</h3>
+                    <p>Streamline your finances. We handle bookkeeping, payroll, tax prep & more, so you can focus on growth.</p>
+                </div>
+            </article>
+            <article class="card_article">
+                <div class="card_data">
+                    <h3>Periodical Compliances</h3>
+                    <p>Stay compliant & stress-free. We handle GST, TDS, IT returns, ROC filings & more, ensuring timely submission.</p>
+                </div>
+            </article>
+            <article class="card_article">
+                <div class="card_data">
+                    <h3>Audit & Assurance</h3>
+                    <p>Enhance credibility & trust. We provide statutory, internal, tax audits & due diligence for accurate financial reporting.</p>
+                </div>
+            </article>
+            <article class="card_article">
+                <div class="card_data">
+                    <h3>Consultancy Services</h3>
+                    <p>Make informed decisions. We offer expert financial planning, risk management, valuation & more.</p>
+                </div>
+            </article>
+            <article class="card_article">
+                <div class="card_data">
+                    <h3>Secretarial Compliances</h3>
+                    <p>Ensure smooth corporate governance. We handle board meetings, AGMs, statutory filings & legal opinions.</p>
+                </div>
+            </article>
+            <article class="card_article">
+                <div class="card_data">
+                    <h3>Transfer Pricing Review</h3>
+                    <p>Mitigate tax risks. We determine arm's length prices, prepare documentation & assist with audits/disputes.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+    <div id="container5" class="container">
+        <h1 style="z-index: 99;">Contact Us</h1>
+        <div class="lowerBox">
+            <div class="leftBox">
+                <div class="google-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d367.37297001582766!2d77.57465704109627!3d12.906651488157754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15e03fe061bb%3A0x36ad0b1b90bddefc!2sHegde%20Hegde%20%26%20Associates%20LLP%2C%20Chartered%20Accountants!5e0!3m2!1sen!2sin!4v1722241448959!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>       
+                </div>
+                <div class="addressBox" style="padding: 30px;">
+                    <h3>Hegde Hegde & Associates LLP.</h3>
+                    <p>#13, Manasa Complex, <br>
+                        Near Sarakki Signal, 100 Ft Ring Road,<br>
+                        JP Nagar 6th Phase, Bengaluru - 560078</p>
+                    <din class="linkedin">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                            </svg>
+                        <span>Hegde Hegde & Associates LLP.</span>
+                    </din>
+                    <div class="mobile">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                            <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                        </svg>
+                        <span>+91 94821 32982</span>
+                    </div>
+                    <div class="lanline">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                        </svg>
+                        <span>+91 80 35007756</span>
+                    </div>
+                </div>
+            </div>
+            <div class="rightBox">
+                <div class="form-container">
+                    <div class="form">
+                        <span class="heading">Send us an E-Mail</span>
+                        <input placeholder="Your Name" type="text" class="input">
+                        <input placeholder="Email" id="mail" type="email" class="input">
+                        <textarea placeholder="Your Query" rows="10" cols="30" id="message" name="message" class="textarea"></textarea>
+                        <div class="button-container">
+                        <div class="send-button">Send</div>
+                        <div class="reset-button-container">
+                            <div id="reset-btn" class="reset-button">Reset</div>
+                        </div>
+                    </div>
+                </div>
+                </div>
             </div>
         </div>
     </div>

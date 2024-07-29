@@ -76,6 +76,8 @@ body::-webkit-scrollbar-thumb {
   transition: box-shadow .3s ease, transform .2s ease;
   display: flex;
   flex-direction: column;
+  border-radius: 1rem;
+  border: 1px solid rgba(78, 101, 255, 1);
  }
 
  .card-info {
@@ -83,14 +85,14 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: transform .2s ease, opacity .2s ease;
+  transition: transform .7s ease, opacity .7s ease;
  }
  
  /*Image*/
  .card-avatar {
   --size: 150px;
   border-radius: 50%;
-  transition: transform .2s ease;
+  transition: transform .7s ease;
   margin-bottom: 1rem;
  }
  .card img{
@@ -105,7 +107,7 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-around;
   width: 100%;
   opacity: 0;
-  transition: transform .2s ease, opacity .2s ease;
+  transition: transform .7s ease, opacity .7s ease;
  }
  
  .card-social__item {
@@ -118,7 +120,7 @@ body::-webkit-scrollbar-thumb {
   width: 18px;
   fill: #515F65;
   cursor: pointer;
-  transition: fill 0.2s ease ,transform 0.2s ease;
+  transition: fill 0.7s ease ,transform 0.7s ease;
  }
  
  /*Text*/
@@ -157,3 +159,138 @@ body::-webkit-scrollbar-thumb {
  .card-avatar:hover {
   transform: scale(1.1);
  }
+
+.card_article{
+  box-sizing: border-box;
+  width: 275px;
+  height: 300px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid rgba(78, 101, 255, 1);
+  box-shadow: 2px 7px 14px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  color: black;
+  margin: 10px;
+  padding: 25px;
+}
+
+.card_article:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.card_article:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.google-map iframe {
+  border-radius: 1rem;
+  border: 1px solid black;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add a shadow for better visibility */
+  width: 400px; /* Ensure the iframe fits within the parent */
+  height: 300px; /* Set a fixed height */
+}
+
+.form-container {
+  max-width: 700px;
+  margin: 30px;
+  background-color: rgba(217, 217, 217, 0.58);
+  padding: 30px;
+  border-left: 5px solid rgba(78, 101, 255, 1);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+}
+
+.heading {
+  display: block;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.form-container .form .input {
+  color: #87a4b6;
+  width: 100%;
+  background-color: rgba(217, 217, 217, 0.58);
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  border-left: 1px solid transparent;
+}
+
+.form-container .form .input:focus {
+  border-left: 5px solid rgba(78, 101, 255, 1);
+}
+
+.form-container .form .textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: rgb(255, 255, 255);
+  color: rgba(78, 101, 255, 1);
+  font-weight: bold;
+  resize: none;
+  max-height: 150px;
+  margin-bottom: 20px;
+  border-left: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .textarea:focus {
+  border-left: 5px solid rgba(78, 101, 255, 1);
+}
+
+.form-container .form .button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.form-container .form .button-container .send-button {
+  flex-basis: 70%;
+  background: rgba(78, 101, 255, 1);
+  padding: 10px;
+  color: #000000;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .button-container .send-button:hover {
+  background: transparent;
+  border: 1px solid rgba(78, 101, 255, 1);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.form-container .form .button-container .reset-button-container {
+  flex-basis: 30%;
+}
+
+.form-container .form .button-container .reset-button-container .reset-button {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  background: #81959e;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .button-container .reset-button-container .reset-button:hover {
+  background: transparent;
+  color: black;
+  cursor: pointer;
+}
